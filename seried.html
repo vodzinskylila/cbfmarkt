@@ -1,1 +1,630 @@
-FAZER NAO ESQUECE SEU FDP BURRO
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campeonato Brasileiro Série D</title>
+    <script src="https://kit.fontawesome.com/eef6794ed9.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" type="imagex/png" href="./img/logos/serie_d.png">
+    <style>
+        :root {
+            --amarelo-bandeira: #DCB21E;
+            --verde-bandeira: #3B9C62;
+            --azul-bandeira: #21468a;
+            --branco: #ffffff;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--branco);
+        }
+
+        header {
+            background-color: var(--amarelo-bandeira);
+            color: var(--verde-bandeira);
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            background-color: var(--branco);
+            padding: 15px 0;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+        }
+
+        nav ul li a {
+            color: var(--azul-bandeira);
+            text-decoration: none;
+            padding: 10px 20px;
+        }
+
+        nav ul li a:hover {
+            background-color: var(--amarelo-bandeira);
+        }
+
+        .container {
+            width: 90%;
+            margin: auto;
+        }
+
+        .team {
+            border: 1px solid var(--verde-bandeira);
+            margin: 10px 0;
+            padding: 10px;
+        }
+
+        .team h2 {
+            color: var(--azul-bandeira);
+        }
+
+        footer {
+            background-color: var(--verde-bandeira);
+            color: var(--branco);
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background-color: var(--branco);
+            margin-top: 20px;
+        }
+
+        th,
+        td {
+            border: 1px solid var(--azul-bandeira);
+            padding: 5px 15px;
+            text-align: center;
+        }
+
+        th {
+            background-color: var(--verde-bandeira);
+            color: var(--branco);
+            font-size: 1.1em;
+        }
+
+        tr:nth-child(even) {
+            background-color: var(--amarelo-bandeira);
+        }
+
+        tr:hover {
+            background-color: rgba(33, 70, 138, 0.640);
+        }
+
+        a {
+            color: black;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .nome_time {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            margin-top: -30px;
+
+        }
+
+        .logo_time {
+            display: flex;
+            max-width: 40px;
+            max-height: 40px;
+            width: 40px;
+            height: 40px;
+            margin-top: 10px;
+            margin-left: 10px;
+        }
+
+        .campeonato {
+            display: flex;
+            flex-direction: column;
+            width: 20%;
+            height: 60px;
+        }
+
+        h2 {
+            display: flex;
+            margin-left: 15px;
+        }
+
+        .linha_campeonato {
+            background-color: #005AFF;
+            display: flex;
+            width: 100%;
+            height: 03px;
+            margin-top: -15px;
+        }
+
+        .separador {
+            background-color: var(--amarelo-bandeira);
+            width: 100%;
+            height: 5px;
+        }
+
+        .info_campeonato {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            height: 180px;
+            margin-top: 5px;
+        }
+
+        .logo_info {
+            max-width: 7%;
+            max-height: 180px;
+            width: auto;
+            height: auto;
+            margin-top: 8px;
+            margin-left: 10px;
+        }
+
+        .info {
+            display: flex;
+            background-color: var(--azul-bandeira);
+            border-radius: 40px;
+            width: 50%;
+            height: auto;
+            margin-left: 60px;
+        }
+
+        .valor_camp {
+            background-color: var(--azul-bandeira);
+            border-radius: 40px;
+            width: 20%;
+            height: auto;
+            margin-left: 30px;
+        }
+
+        .divisor1 {
+            display: flex;
+            flex-direction: column;
+            margin-left: 35px;
+            width: 25%;
+            height: 100%;
+            justify-content: center;
+        }
+
+        .divisor2 {
+            display: flex;
+            flex-direction: column;
+            margin-left: 120px;
+            width: 25%;
+            height: 100%;
+            justify-content: center;
+        }
+
+        .divisor3 {
+            display: flex;
+            flex-direction: column;
+            margin-left: 120px;
+            width: 25%;
+            height: 100%;
+            justify-content: center;
+        }
+
+        .numero_times {
+            color: var(--branco);
+            height: 40px;
+            font-size: 20px;
+        }
+
+        .numero_jogadores {
+            color: var(--branco);
+            height: 40px;
+            font-size: 20px;
+        }
+
+        .estrangeiros {
+            color: var(--branco);
+            height: 40px;
+            font-size: 20px;
+        }
+
+        .valor_mercado {
+            color: var(--branco);
+            height: 40px;
+            font-size: 20px;
+        }
+
+        .atual_campeao {
+            color: var(--branco);
+            height: 40px;
+            font-size: 20px;
+        }
+
+        .maior_campeao {
+            color: var(--branco);
+            height: 40px;
+            font-size: 20px;
+        }
+
+        .img_atual_campeao {
+            position: absolute;
+            margin-top: -10px;
+            margin-left: 5px;
+            width: 40px;
+        }
+
+        .img_maior_campeao {
+            position: absolute;
+            margin-top: -20px;
+            margin-left: 5px;
+            width: 35px;
+        }
+
+        .separador_nav {
+            background-color: var(--verde-bandeira);
+            width: 100%;
+            height: 5px;
+        }
+
+        .item_navbar {
+            margin-left: 120px;
+            text-decoration: none;
+            color: #21468A;
+            border: 2px solid #21468A;
+            border-radius: 40px;
+            font-size: 18px;
+        }
+
+        .pesquisar{
+            background-color: var(--branco);
+            border: 2px solid --azul-bandeira;
+            border-radius: 20px;
+            height: 20px;
+            padding: 8px;
+            outline: none;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <form action="/action_page.php">
+            <input type="text" id="pesquisar" name="pesquisar" class="pesquisar" placeholder="Pesquisar">
+            <button type="submit"></button>
+        </form>
+    </header>
+
+    <div class="separador_nav"></div>
+
+    <nav>
+        <ul>
+            <li><a href="#" class="item_navbar"><i class="fa-solid fa-trophy"></i>&#160;Campeonatos</a></li>
+            <li><a href="#" class="item_navbar"><i class="fa-solid fa-right-left"></i>&#160;Transferencias</a></li>
+            <li><a href="#" class="item_navbar"><i class="fa-solid fa-shirt"></i>&#160;Clubes</a></li>
+            <li><a href="#" class="item_navbar"><i class="fa-solid fa-dollar-sign"></i>&#160;Valores de Mercado</a></li>
+            <li><a href="#" class="item_navbar"><i class="fa-solid fa-chart-simple"></i>&#160;Estatística</a></li>
+        </ul>
+    </nav>
+
+    <div class="separador"></div>
+
+    <div class="campeonato">
+        <h2>Campeonato Brasileiro Série D</h2>
+        <div class="linha_campeonato"></div>
+    </div>
+
+    <div class="info_campeonato">
+        <img src="img/logos/serie_d.png" class="logo_info">
+        <div class="info">
+            <div class="divisor1">
+                <p class="numero_times">N° de Times: 64</p>
+                <p class="numero_jogadores">N° de Jogadores: 2078</p>
+            </div>
+
+            <div class="divisor2">
+                <p class="estrangeiros">Estrangeiros: 0</p>
+                <p class="valor_mercado">Valor de Mercado: 4,30 mi €</p>
+            </div>
+
+            <div class="divisor3">
+                <p class="atual_campeao">Atual Campeão: <a href=""><img src="img/times/serieb/amazonas.png"
+                            class="img_atual_campeao"></a></p>
+                <p class="maior_campeao">Maior Campeão: <a href=""><img src="img/times/serieb/vila_nova.png"
+                            class="img_maior_campeao"></a></p>
+            </div>
+        </div>
+        <div class="valor_camp"></div>
+    </div>
+
+    <div class="container">
+        <table>
+            <tr>
+                <th>Clube</th>
+                <th>Plantel</th>
+                <th>Media de Idade</th>
+                <th>Estrangeiros</th>
+                <th>Media de Valor de Mercado</th>
+                <th>Valor de Mercado Total</th>
+            </tr>
+            <tr>
+                <td><a href=""><img class="logo_time" src="./img/times/seried/manauara.png"></a>
+                    <a href="">
+                        <p class="nome_time">Manauara EC</p>
+                    </a>
+                </td>
+                <td>32</td>
+                <td>26,9</td>
+                <td>0</td>
+                <td>-</td>
+                <td>-</td>
+            </tr>
+
+            <tr>
+                <td><a href=""><img class="logo_time" src="./img/times/seried/porto_velho.png"></a>
+                    <a href="">
+                        <p class="nome_time">Porto Velho EC</p>
+                    </a>
+                </td>
+                <td>35</td>
+                <td>27,5</td>
+                <td>0</td>
+                <td>2 mil €</td>
+                <td>100 mil €</td>
+            </tr>
+
+            <tr>
+                <td><a href=""><img class="logo_time" src="./img/times/seried/trem.png"></a>
+                    <a href="">
+                        <p class="nome_time">Trem DC</p>
+                    </a>
+                </td>
+                <td>34</td>
+                <td>28,8</td>
+                <td>0</td>
+                <td>-</td>
+                <td>-</td>
+            </tr>
+
+            <tr>
+                <td><a href=""><img class="logo_time" src="./img/times/seried/princesa_am.png"></a>
+                    <a href="">
+                        <p class="nome_time">Princesa-AM</p>
+                    </a>
+                </td>
+                <td>28</td>
+                <td>26,6</td>
+                <td>1</td>
+                <td>-</td>
+                <td>-</td>
+            </tr>
+
+            <tr>
+                <td><a href=""><img class="logo_time" src="./img/times/seried/rio_branco_acre.png"></a>
+                    <a href="">
+                        <p class="nome_time">Rio Branco-AC</p>
+                    </a>
+                </td>
+                <td>31</td>
+                <td>25,8</td>
+                <td>0</td>
+                <td>-</td>
+                <td>-</td>
+            </tr>
+
+            <tr>
+                <td><a href=""><img class="logo_time" src="./img/times/seried/manaus.png"></a>
+                    <a href="">
+                        <p class="nome_time">Manaus</p>
+                    </a>
+                </td>
+                <td>32</td>
+                <td>26,9</td>
+                <td>1</td>
+                <td>-</td>
+                <td>-</td>
+            </tr>
+
+            <tr>
+                <td><a href=""><img class="logo_time" src="./img/times/seried/sao_raimundo.png"></a>
+                    <a href="">
+                        <p class="nome_time">São Raimundo</p>
+                    </a>
+                </td>
+                <td>34</td>
+                <td>27,7</td>
+                <td>1</td>
+                <td>-</td>
+                <td>-</td>
+            </tr>
+
+            <tr>
+                <td><a href=""><img class="logo_time" src="./img/times/seried/humaita.png"></a>
+                    <a href="">
+                        <p class="nome_time">Humaitá</p>
+                    </a>
+                </td>
+                <td>38</td>
+                <td>24,5</td>
+                <td>0</td>
+                <td>-</td>
+                <td>-</td>
+            </tr>
+
+            <tr>
+                <td><a href=""><img class="logo_time" src="./img/times/seried/maranhao.png"></a>
+                    <a href="">
+                        <p class="nome_time">Maranhão</p>
+                    </a>
+                </td>
+                <td>35</td>
+                <td>24,9</td>
+                <td>0</td>
+                <td>-</td>
+                <td>-</td>
+            </tr>
+
+            <tr>
+                <td><a href=""><img class="logo_time" src="./img/times/seried/tocantinopolis.png"></a>
+                    <a href="">
+                        <p class="nome_time">Tocantinopolis</p>
+                    </a>
+                </td>
+                <td>38</td>
+                <td>27,0</td>
+                <td>0</td>
+                <td>-</td>
+                <td>-</td>
+            </tr>
+
+            <tr>
+                <td><a href=""><img class="logo_time" src="./img/times/seried/fluminense.png"></a>
+                    <a href="">
+                        <p class="nome_time">Fluminense-PI</p>
+                    </a>
+                </td>
+                <td>37</td>
+                <td>26,6</td>
+                <td>0</td>
+                <td>-</td>
+                <td>-</td>
+            </tr>
+
+            <tr>
+                <td><a href=""><img class="logo_time" src="./img/times/seried/moto_club.png"></a>
+                    <a href="">
+                        <p class="nome_time">Moto Club</p>
+                    </a>
+                </td>
+                <td>41</td>
+                <td>25,7</td>
+                <td>0</td>
+                <td>2 mil €</td>
+                <td>100 mil €</td>
+            </tr>
+
+            <tr>
+                <td><a href=""><img class="logo_time" src="./img/times/seried/cameta.png"></a>
+                    <a href="">
+                        <p class="nome_time">Cametá</p>
+                    </a>
+                </td>
+                <td>44</td>
+                <td>25,7</td>
+                <td>0</td>
+                <td>-</td>
+                <td>-</td>
+            </tr>
+
+            <tr>
+                <td><a href=""><img class="logo_time" src="./img/times/seried/altos.png"></a>
+                    <a href="">
+                        <p class="nome_time">AA Altos</p>
+                    </a>
+                </td>
+                <td>32</td>
+                <td>26,3</td>
+                <td>0</td>
+                <td>44 mil €</td>
+                <td>1,40 mi €</td>
+            </tr>
+
+            <tr>
+                <td><a href=""><img class="logo_time" src="./img/times/seriec/sampaio_correa.png"></a>
+                    <a href="">
+                        <p class="nome_time">Sampaio Corrêa</p>
+                    </a>
+                </td>
+                <td>36</td>
+                <td>27,0</td>
+                <td>0</td>
+                <td>4 mil €</td>
+                <td>150 mil €</td>
+            </tr>
+
+            <tr>
+                <td><a href=""><img class="logo_time" src="./img/times/seriec/sao_bernardo.png"></a>
+                    <a href="">
+                        <p class="nome_time">São Bernardo</p>
+                    </a>
+                </td>
+                <td>29</td>
+                <td>28,1</td>
+                <td>0</td>
+                <td>57 mil €</td>
+                <td>1,65 mi €</td>
+            </tr>
+
+            <tr>
+                <td><a href=""><img class="logo_time" src="./img/times/seriec/são_jose.png"></a>
+                    <a href="">
+                        <p class="nome_time">EC São José</p>
+                    </a>
+                </td>
+                <td>28</td>
+                <td>27,2</td>
+                <td>0</td>
+                <td>-</td>
+                <td>-</td>
+            </tr>
+
+            <tr>
+                <td><a href=""><img class="logo_time" src="./img/times/seriec/tombense.png"></a>
+                    <a href="">
+                        <p class="nome_time">Tombense</p>
+                    </a>
+                </td>
+                <td>33</td>
+                <td>26,3</td>
+                <td>0</td>
+                <td>15 mil €</td>
+                <td>500 mil €</td>
+            </tr>
+
+            <tr>
+                <td><a href=""><img class="logo_time" src="./img/times/seriec/volta_redonda.png"></a>
+                    <a href="">
+                        <p class="nome_time">Volta Redonda</p>
+                    </a>
+                </td>
+                <td>34</td>
+                <td>25,9</td>
+                <td>0</td>
+                <td>10 mil €</td>
+                <td>350 mil €</td>
+            </tr>
+
+            <tr>
+                <td><a href=""><img class="logo_time" src="./img/times/seriec/ypiranga.png"></a>
+                    <a href="">
+                        <p class="nome_time">Ypiranga FC</p>
+                    </a>
+                </td>
+                <td>30</td>
+                <td>27,9</td>
+                <td>0</td>
+                <td>10 mil €</td>
+                <td>300 mil €</td>
+            </tr>
+
+        </table>
+    </div>
+    <footer>
+        <h3>© 2024 Campeonato Brasileiro Série C</h3>
+    </footer>
+    <script>
+    </script>
+</body>
+
+</html>
