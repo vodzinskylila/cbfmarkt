@@ -121,7 +121,6 @@
             flex-direction: row;
             justify-content: center;
             margin-top: -30px;
-
         }
 
         .logo_time {
@@ -286,13 +285,440 @@
             font-size: 18px;
         }
 
-        .pesquisar{
+        .pesquisar {
             background-color: var(--branco);
             border: 2px solid --azul-bandeira;
             border-radius: 20px;
             height: 20px;
             padding: 8px;
             outline: none;
+        }
+
+        .logo_time_internacional {
+            display: flex;
+            max-width: 40px;
+            max-height: 40px;
+            width: 35px;
+            height: 35px;
+            margin-top: 10px;
+            margin-left: 10px;
+        }
+
+        .logo_time_bragantino {
+            display: flex;
+            max-width: 40px;
+            max-height: 40px;
+            width: 40px;
+            height: 35px;
+            margin-top: 10px;
+            margin-left: 10px;
+        }
+
+        .logo_time_criciuma {
+            display: flex;
+            max-width: 40px;
+            max-height: 40px;
+            width: 40px;
+            height: 35px;
+            margin-top: 10px;
+            margin-left: 10px;
+        }
+
+        .logo_time_cruzeiro {
+            display: flex;
+            max-width: 40px;
+            max-height: 40px;
+            width: 35px;
+            height: 35px;
+            margin-top: 10px;
+            margin-left: 10px;
+        }
+
+        .logo_time_vitoria {
+            display: flex;
+            max-width: 40px;
+            max-height: 40px;
+            width: 35px;
+            height: 40px;
+            margin-top: 10px;
+            margin-left: 10px;
+        }
+
+        @media (max-width: 1366px) {
+            .logo_time {
+                display: none;
+            }
+
+            .logo_time_internacional {
+                display: none;
+            }
+
+            .logo_time_bragantino {
+                display: none;
+            }
+
+            .logo_time_criciuma {
+                display: none;
+            }
+
+            .logo_time_cruzeiro {
+                display: none;
+            }
+
+            .logo_time_vitoria {
+                display: none;
+            }
+
+            .campeonato {
+                display: flex;
+                flex-direction: column;
+                width: 30%;
+                height: 60px;
+            }
+
+            h2 {
+                display: flex;
+                margin-left: 15px;
+            }
+
+            .linha_campeonato {
+                background-color: #005AFF;
+                display: flex;
+                width: 100%;
+                height: 03px;
+                margin-top: -15px;
+            }
+
+            .info_campeonato {
+                display: flex;
+                flex-direction: row;
+                width: 100%;
+                height: 150px;
+                margin-top: 5px;
+            }
+
+            .logo_info {
+                max-width: 10%;
+                max-height: 150px;
+                width: auto;
+                height: auto;
+                margin-top: 8px;
+                margin-left: 10px;
+            }
+
+            .info {
+                display: flex;
+                background-color: var(--azul-bandeira);
+                border-radius: 40px;
+                width: 50%;
+                height: auto;
+                margin-left: 60px;
+            }
+
+            .valor_camp {
+                background-color: var(--azul-bandeira);
+                border-radius: 40px;
+                width: 20%;
+                height: auto;
+                margin-left: 30px;
+            }
+
+            .divisor1 {
+                display: flex;
+                flex-direction: column;
+                margin-left: 35px;
+                width: 25%;
+                height: 100%;
+                justify-content: center;
+            }
+
+            .divisor2 {
+                display: flex;
+                flex-direction: column;
+                margin-left: 120px;
+                width: 25%;
+                height: 100%;
+                justify-content: center;
+            }
+
+            .divisor3 {
+                display: flex;
+                flex-direction: column;
+                margin-left: 120px;
+                width: 50%;
+                height: 100%;
+                justify-content: center;
+            }
+
+            .numero_times {
+                color: var(--branco);
+                height: 40px;
+                font-size: 15px;
+            }
+
+            .numero_jogadores {
+                color: var(--branco);
+                height: 40px;
+                font-size: 15px;
+            }
+
+            .estrangeiros {
+                color: var(--branco);
+                height: 40px;
+                font-size: 15px;
+            }
+
+            .valor_mercado {
+                color: var(--branco);
+                height: 40px;
+                font-size: 15px;
+            }
+
+            .atual_campeao {
+                color: var(--branco);
+                height: 40px;
+                font-size: 15px;
+            }
+
+            .maior_campeao {
+                color: var(--branco);
+                height: 40px;
+                font-size: 15px;
+            }
+
+            .img_atual_campeao {
+                position: absolute;
+                margin-top: -10px;
+                margin-left: 5px;
+                width: 40px;
+            }
+
+            .img_maior_campeao {
+                position: absolute;
+                margin-top: -10px;
+                margin-left: 5px;
+                width: 40px;
+            }
+
+            nav {
+                display: flex;
+                justify-content: space-around;
+                background-color: var(--branco);
+                padding: 15px 0;
+            }
+
+            nav ul {
+                list-style-type: none;
+                margin-left: -117px;
+                padding: 0;
+            }
+
+            nav ul li {
+                display: inline;
+            }
+
+            nav ul li a {
+                color: var(--azul-bandeira);
+                text-decoration: none;
+                padding: 10px 10px;
+            }
+
+            nav ul li a:hover {
+                background-color: var(--amarelo-bandeira);
+            }
+        }
+
+        @media (max-width: 1024px) {
+            .logo_time {
+                display: none;
+            }
+
+            .logo_time_internacional {
+                display: none;
+            }
+
+            .logo_time_bragantino {
+                display: none;
+            }
+
+            .logo_time_criciuma {
+                display: none;
+            }
+
+            .logo_time_cruzeiro {
+                display: none;
+            }
+
+            .logo_time_vitoria {
+                display: none;
+            }
+
+            .campeonato {
+                display: flex;
+                flex-direction: column;
+                width: 45%;
+                height: 60px;
+            }
+
+            h2 {
+                display: flex;
+                margin-left: 15px;
+            }
+
+            .linha_campeonato {
+                background-color: #005AFF;
+                display: flex;
+                width: 100%;
+                height: 03px;
+                margin-top: -15px;
+            }
+
+            .info_campeonato {
+                display: flex;
+                flex-direction: row;
+                width: 100%;
+                height: 120px;
+                margin-top: 5px;
+            }
+
+            .logo_info {
+                max-width: 10%;
+                max-height: 150px;
+                width: auto;
+                height: auto;
+                margin-top: 8px;
+                margin-left: 10px;
+            }
+
+            .info {
+                display: flex;
+                background-color: var(--azul-bandeira);
+                border-radius: 40px;
+                width: 50%;
+                height: auto;
+                margin-left: 60px;
+            }
+
+            .valor_camp {
+                background-color: var(--azul-bandeira);
+                border-radius: 40px;
+                width: 20%;
+                height: auto;
+                margin-left: 30px;
+            }
+
+            .divisor1 {
+                display: flex;
+                flex-direction: column;
+                margin-left: 35px;
+                width: 20%;
+                height: 100%;
+                justify-content: center;
+            }
+
+            .divisor2 {
+                display: flex;
+                flex-direction: column;
+                margin-left: 120px;
+                width: 20%;
+                height: 100%;
+                justify-content: center;
+            }
+
+            .divisor3 {
+                display: flex;
+                flex-direction: column;
+                margin-left: 120px;
+                width: 30%;
+                height: 100%;
+                justify-content: center;
+            }
+
+            .numero_times {
+                color: var(--branco);
+                height: 40px;
+                font-size: 14px;
+            }
+
+            .numero_jogadores {
+                color: var(--branco);
+                height: 40px;
+                font-size: 14px;
+            }
+
+            .estrangeiros {
+                color: var(--branco);
+                height: 40px;
+                font-size: 14px;
+            }
+
+            .valor_mercado {
+                color: var(--branco);
+                height: 40px;
+                font-size: 14px;
+            }
+
+            .atual_campeao {
+                color: var(--branco);
+                height: 40px;
+                font-size: 14px;
+            }
+
+            .maior_campeao {
+                color: var(--branco);
+                height: 40px;
+                font-size: 14px;
+            }
+
+            .img_atual_campeao {
+                position: absolute;
+                margin-top: -10px;
+                margin-left: 5px;
+                width: 40px;
+            }
+
+            .img_maior_campeao {
+                position: absolute;
+                margin-top: -10px;
+                margin-left: 5px;
+                width: 40px;
+            }
+
+            nav {
+                display: flex;
+                justify-content: space-around;
+                background-color: var(--branco);
+                padding: 15px 0;
+            }
+
+            nav ul {
+                list-style-type: none;
+                margin-left: -117px;
+                padding: 0;
+            }
+
+            nav ul li {
+                display: inline;
+            }
+
+            nav ul li a {
+                color: var(--azul-bandeira);
+                text-decoration: none;
+                padding: 10px 10px;
+            }
+
+            nav ul li a:hover {
+                background-color: var(--amarelo-bandeira);
+            }
+        }
+
+        @media (max-height: 768px) {
+            .nome_time {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                margin-top: 20px;
+            }
         }
     </style>
 
@@ -411,7 +837,7 @@
             </tr>
 
             <tr>
-                <td><a href=""><img class="logo_time_internacional" style="display: flex; max-width: 40px; max-height: 40px; width: 35px; height: 35px; margin-top: 10px; margin-left: 10px;" src="./img/times/seriea/internacional.png"></a>
+                <td><a href=""><img class="logo_time_internacional" src="./img/times/seriea/internacional.png"></a>
                     <a href="">
                         <p class="nome_time">Internacional</p>
                     </a>
@@ -450,7 +876,7 @@
             </tr>
 
             <tr>
-                <td><a href=""><img class="logo_time_bragantino" style="display: flex; max-width: 40px; max-height: 40px; width: 40px; height: 35px; margin-top: 10px; margin-left: 10px;" src="./img/times/seriea/rb_bragantino.png"></a>
+                <td><a href=""><img class="logo_time_bragantino" src="./img/times/seriea/rb_bragantino.png"></a>
                     <a href="">
                         <p class="nome_time">RB Bragantino</p>
                     </a>
@@ -515,7 +941,7 @@
             </tr>
 
             <tr>
-                <td><a href=""><img class="logo_time_cruzeiro" style="display: flex; max-width: 40px; max-height: 40px; width: 35px; height: 35px; margin-top: 10px; margin-left: 10px;" src="./img/times/seriea/cruzeiro.png"></a>
+                <td><a href=""><img class="logo_time_cruzeiro" src="./img/times/seriea/cruzeiro.png"></a>
                     <a href="">
                         <p class="nome_time">Cruzeiro</p>
                     </a>
@@ -567,7 +993,7 @@
             </tr>
 
             <tr>
-                <td><a href=""><img class="logo_time_vitoria" style="display: flex; max-width: 40px; max-height: 40px; width: 35px; height: 40px; margin-top: 10px; margin-left: 10px;" src="./img/times/seriea/vitoria.png"></a>
+                <td><a href=""><img class="logo_time_vitoria" s src="./img/times/seriea/vitoria.png"></a>
                     <a href="">
                         <p class="nome_time">EC Vitória</p>
                     </a>
@@ -606,7 +1032,7 @@
             </tr>
 
             <tr>
-                <td><a href=""><img class="logo_time_criciuma" style="display: flex; max-width: 40px; max-height: 40px; width: 40px; height: 35px; margin-top: 10px; margin-left: 10px;" src="./img/times/seriea/criciuma.png"></a>
+                <td><a href=""><img class="logo_time_criciuma" src="./img/times/seriea/criciuma.png"></a>
                     <a href="">
                         <p class="nome_time">Criciúma EC</p>
                     </a>
