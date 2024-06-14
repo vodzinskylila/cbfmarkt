@@ -140,17 +140,19 @@
             height: 60px;
         }
 
-        h2 {
+        h3 {
             display: flex;
             margin-left: 15px;
+            font-size: 22px;
         }
 
         .linha_campeonato {
             background-color: #005AFF;
             display: flex;
             width: 100%;
-            height: 03px;
+            height: 05px;
             margin-top: -15px;
+            border-radius: 20px;
         }
 
         .separador {
@@ -286,12 +288,15 @@
         }
 
         .pesquisar {
-            background-color: var(--branco);
-            border: 2px solid --azul-bandeira;
+            padding: 10px;
+            font-size: 17px;
+            border: 1px solid grey;
+            float:none;
+            width: 20%;
+            background: #f1f1f1;
             border-radius: 20px;
-            height: 20px;
-            padding: 8px;
-            outline: none;
+            text-decoration: none;
+            
         }
 
         .logo_time_internacional {
@@ -556,13 +561,13 @@
             .campeonato {
                 display: flex;
                 flex-direction: column;
-                width: 45%;
-                height: 60px;
+                width: 55%;
+                height: 70px;
             }
 
-            h2 {
+            h3 {
                 display: flex;
-                margin-left: 15px;
+                margin-left: 35px;
             }
 
             .linha_campeonato {
@@ -571,6 +576,7 @@
                 width: 100%;
                 height: 03px;
                 margin-top: -15px;
+                margin-left: 10px;
             }
 
             .info_campeonato {
@@ -698,7 +704,7 @@
             }
 
             nav ul li {
-                display: inline;
+                display: inline block;
             }
 
             nav ul li a {
@@ -706,12 +712,45 @@
                 text-decoration: none;
                 padding: 10px 10px;
             }
+            
+           
 
             nav ul li a:hover {
                 background-color: var(--amarelo-bandeira);
             }
         }
+        .dropbtn {
+ 
+        color: white;
+        padding: 16px;a
+ 
+}
 
+        .dropdown-menu {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 120px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            padding: 12px 16px;
+            z-index: 1;
+           
+        }
+        .dropdown-menu a{
+            display: inline-block;
+            color: #21468A;
+            
+        }
+        .dropdown:hover .dropdown-menu{
+            display:block;
+            
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+           
+}
         @media (max-height: 768px) {
             .nome_time {
                 display: flex;
@@ -736,7 +775,19 @@
 
     <nav>
         <ul>
-            <li><a href="#" class="item_navbar"><i class="fa-solid fa-trophy"></i>&#160;Campeonatos</a></li>
+            <li class="dropdown">
+                
+                    <a href="#" class="item_navbar"><i class="fa-solid fa-trophy"></i>&#160;Campeonatos</a>
+                    <div class="dropdown">
+                        
+                        <div class="dropdown-menu">
+                          <a href="seriea.html">Série A</a>
+                          <a href="serieb.html">Série B</a>
+                          <a href="seriec.html">Série C</a>
+                          <a href="seried.html">Série D</a>
+                        </div>
+                      </div>
+                
             <li><a href="#" class="item_navbar"><i class="fa-solid fa-right-left"></i>&#160;Transferencias</a></li>
             <li><a href="#" class="item_navbar"><i class="fa-solid fa-shirt"></i>&#160;Clubes</a></li>
             <li><a href="#" class="item_navbar"><i class="fa-solid fa-dollar-sign"></i>&#160;Valores de Mercado</a></li>
@@ -747,7 +798,7 @@
     <div class="separador"></div>
 
     <div class="campeonato">
-        <h2>Campeonato Brasileiro Série A</h2>
+        <h3>Campeonato Brasileiro Série A</h3>
         <div class="linha_campeonato"></div>
     </div>
 
